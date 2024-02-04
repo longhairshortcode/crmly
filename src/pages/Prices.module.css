@@ -1,0 +1,117 @@
+.container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 100vh;
+    background-color: black;
+}
+
+.title{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 2rem; 
+}
+
+/* .underTitle{
+    display: flex;
+    border:.2rem green solid;
+    width: 9rem;
+    justify-content: space-around;
+
+} */
+
+.underTitle {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1.15rem;
+    font-size: .8rem;
+    padding-left: 7.5rem;
+  }
+
+.perMonth{
+    font-size: .8rem;
+    color: black;
+}
+
+.underTitle span{
+    color: white;
+}
+
+.planBoxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    height: 28rem;
+}
+
+.planBoxes div{
+    width: 19rem;
+    border-radius: var(--box-radius);
+}
+
+.leftPink{
+    background-color: pink;
+}
+
+.middleBlue{
+ background-color: turquoise;
+}
+
+.rightYellow{
+    background-color: goldenrod;
+}
+
+.rightYellow .lastLi{
+    padding-bottom: 4.5rem;
+}
+
+.bullet{
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.planBoxes p, .planBoxes ul, .buttonBlack {
+ margin-top: 1.45rem;
+ margin-left: 1.7rem;
+}
+
+.tier{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.price{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.audience{
+    font-size: .8rem;
+}
+
+.planBoxes li{
+ font-size: .8rem;
+}
+
+.planBoxes li:not(:last-child){
+ padding-bottom: .6rem;
+}
+
+.lastLi{
+    padding-bottom: 2.6rem;
+
+}
+
+.buttonBlack{
+    color: white;
+    border: var(--button-border-black);
+    background-color: black;
+    border-radius: .5rem;
+    padding: var(--padding-one);
+    font-size: .7rem;
+}
+
+

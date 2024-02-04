@@ -1,0 +1,15 @@
+:root {
+  --button-border-white: .1rem solid white;
+  --button-background-white: white; 
+  --padding-one: .6rem .7rem;
+  --padding-two: 1rem;
+  --border-radius: .5rem .6rem;
+  --button-width: 5rem;
+
+  --box-radius: .8rem;
+  --box-width: 14.25rem;
+
+  --button-border-black: .1rem solid black;
+  --button-background-black: black; 
+}
+

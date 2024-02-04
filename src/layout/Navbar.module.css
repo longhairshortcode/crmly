@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: black;
+    color: white;
+    /* padding: .5rem 3rem .5rem .5rem; */
+}
+
+.containerLogo, .rightLinks{
+    padding-top: 2rem;
+}
+
+.containerLogo{
+    padding-left: 25rem;
+}
+
+.rightLinks{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 21rem;
+}
+
+.getStartedButton{
+    border-radius: var(--border-radius);
+    background-color: var(--button-background-white);
+    border: var(--button-border-white);
+    color: black;
+    font-size: .9rem;
+    padding: var(--padding-one);
+    width: var(--button-width);
+    text-align: center;
+    font-weight: 400;
+}
