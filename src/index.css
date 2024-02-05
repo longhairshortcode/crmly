@@ -11,5 +11,12 @@
 
   --button-border-black: .1rem solid black;
   --button-background-black: black; 
+  --font-roboto:  'Roboto'
 }
+
+body, *, html{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 

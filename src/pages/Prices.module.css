@@ -40,17 +40,49 @@
     color: white;
 }
 
+.toggleIcon{
+    color: grey;
+}
+
 .planBoxes{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    gap: 1.5rem;
+    gap: 2rem;
     height: 28rem;
 }
 
-.planBoxes div{
-    width: 19rem;
+.planBoxes > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 16rem;
+    height: 23.5rem;
+    padding: 2.5rem;
     border-radius: var(--box-radius);
+}
+
+.planBoxes > div > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.planBoxes > div > div:nth-child(2){
+    height: 9.6rem;
+    background-color: red;
+}
+
+.planBoxes > div > div:nth-child(2) > ul {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.planBoxes > div > div:nth-child(2) > ul > li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .leftPink{
@@ -65,19 +97,12 @@
     background-color: goldenrod;
 }
 
-.rightYellow .lastLi{
-    padding-bottom: 4.5rem;
-}
 
 .bullet{
     font-size: 1.5rem;
     vertical-align: middle;
 }
 
-.planBoxes p, .planBoxes ul, .buttonBlack {
- margin-top: 1.45rem;
- margin-left: 1.7rem;
-}
 
 .tier{
     font-size: 1.2rem;
@@ -97,22 +122,33 @@
  font-size: .8rem;
 }
 
-.planBoxes li:not(:last-child){
- padding-bottom: .6rem;
-}
-
-.lastLi{
-    padding-bottom: 2.6rem;
-
-}
 
 .buttonBlack{
+    display: block;
+    text-align: center;
+    padding: .75rem 0;
     color: white;
     border: var(--button-border-black);
     background-color: black;
     border-radius: .5rem;
-    padding: var(--padding-one);
     font-size: .7rem;
+    width: 150px;
 }
 
 
+/* Media Queries  */
+
+@media screen and (max-width: 480px){
+    .container{
+        height: fit-content;
+        background-color: black;
+    }
+    
+    .planBoxes{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+
+}

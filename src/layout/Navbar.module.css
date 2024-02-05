@@ -13,14 +13,14 @@
 }
 
 .containerLogo{
-    padding-left: 25rem;
+    padding-left: 15rem;
 }
 
 .rightLinks{
     display: flex;
-    gap: 2rem;
+    gap: 1.25rem;
     align-items: center;
-    padding-right: 21rem;
+    padding-right: 13.75rem;
 }
 
 .getStartedButton{
