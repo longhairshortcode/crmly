@@ -35,9 +35,10 @@
     font-weight: 400;
 }
 
-.burgerIcon {
+.burgerIcon{
     display: none;
     color: red;
+    padding-right: 1rem;
 }
 
 
@@ -49,9 +50,6 @@
         cursor: pointer;
     }
 
-    .burgerIcon{
-        background-color: green;
-    }
 
     .rightLinks{
         display: none;
@@ -61,7 +59,7 @@
     .showLinks{
         display: flex;
         flex-direction: column;
-        background-color: red;
+        padding-top: 3rem;
     
     }
 
@@ -71,7 +69,6 @@
 
     .containerLogo{
         padding-left: 0;
-        background-color: blue;
     }
 
    
