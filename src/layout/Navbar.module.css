@@ -34,3 +34,45 @@
     text-align: center;
     font-weight: 400;
 }
+
+.burgerIcon {
+    display: none;
+    color: red;
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 480px){
+    .burgerIcon, .closeIcon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .burgerIcon{
+        background-color: green;
+    }
+
+    .rightLinks{
+        display: none;
+        padding: 0;
+    }
+
+    .showLinks{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    
+    }
+
+    .container{
+        gap: 0rem;
+    }
+
+    .containerLogo{
+        padding-left: 0;
+        background-color: blue;
+    }
+
+   
+}
