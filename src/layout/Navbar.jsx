@@ -14,6 +14,10 @@ const toggleLinks = () => {
   setShowLinks(!showLinks);
 }
 
+const closeLinkMenu = () => {
+  setShowLinks(false)
+}
+
   return (
     <nav className={style.container}>
 
@@ -22,11 +26,11 @@ const toggleLinks = () => {
       </div>
       
       <div className={`${style['rightLinks']} ${showLinks ? style['showLinks'] : ""}`}>
-            <NavLink to="/features">Features</NavLink>
-            <NavLink to="/prices">Prices</NavLink>
-            <NavLink to="/integration">Integration</NavLink>
-            <NavLink to="/login">Log In</NavLink>
-            <NavLink to="/createAccount" className={style.getStartedButton}>Get Started</NavLink>
+            <NavLink to="/features" onClick={closeLinkMenu}>Features</NavLink>
+            <NavLink to="/prices" onClick={closeLinkMenu}>Prices</NavLink>
+            <NavLink to="/integration" onClick={closeLinkMenu}>Integration</NavLink>
+            <NavLink to="/login" onClick={closeLinkMenu}>Log In</NavLink>
+            <NavLink to="/createAccount" className={style.getStartedButton} onClick={closeLinkMenu}>Get Started</NavLink>
       </div>
 
 

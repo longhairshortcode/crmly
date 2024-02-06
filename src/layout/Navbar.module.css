@@ -70,7 +70,6 @@
     }
 
     .container{
-        gap: 0rem;
         position: fixed;
         width: 100%;
     }
