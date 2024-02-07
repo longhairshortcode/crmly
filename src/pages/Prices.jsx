@@ -10,10 +10,13 @@ function Prices() {
     <div className={style.container}>
       <h1 className={style.title}>Pricing</h1>
       
-      <div className={style.underTitle}>
-      <span>Monthly</span>
-      <span><IoToggle className={style.toggleIcon} /></span>
-      <span>Yearly</span><span><img src={save} alt="arrow and discount percentage"></img></span>
+      <div className={style.underTitleContainer}>
+        <span className={style.monthly}>Monthly</span>
+        <span><IoToggle className={style.toggleIcon} /></span>
+        <span className={style.monthly}>Yearly</span>
+        <span className={style.saveImgContainer}>
+          <img className={style.saveImg}src={save} alt="arrow and discount percentage"></img>
+        </span>
       </div>
 
       <div className={style.planBoxes}>

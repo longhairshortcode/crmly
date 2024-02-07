@@ -35,7 +35,7 @@ const closeLinkMenu = () => {
 
 
       <div className={style.burgerIcon} onClick={toggleLinks}>
-        {showLinks ? <AiOutlineClose/> : <HiMenu />} 
+        {showLinks ? <AiOutlineClose size={15}/> : <HiMenu size={15} />} 
       </div>  
     
     </nav>

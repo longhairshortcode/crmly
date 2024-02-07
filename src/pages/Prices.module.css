@@ -1,8 +1,6 @@
 .container{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     height: 100vh;
+    padding-bottom: 2rem;
     background-color: black;
 }
 
@@ -14,31 +12,27 @@
     padding-top: 2rem; 
 }
 
-/* .underTitle{
-    display: flex;
-    border:.2rem green solid;
-    width: 9rem;
-    justify-content: space-around;
 
-} */
-
-.underTitle {
+.underTitleContainer {
     display: flex;
     justify-content: center;
     gap: .5rem;
     margin: 1.15rem;
     font-size: .8rem;
     padding-left: 7.5rem;
+    background-color:black;
   }
+
+
+  .underTitleContainer span{
+    color: white;
+}
 
 .perMonth{
     font-size: .8rem;
     color: black;
 }
 
-.underTitle span{
-    color: white;
-}
 
 .toggleIcon{
     color: grey;
@@ -56,7 +50,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    width: 16rem;
+    width: 100%;
+    max-width: 16rem;
     height: 23.5rem;
     padding: 2.5rem;
     border-radius: var(--box-radius);
@@ -70,8 +65,9 @@
 
 .planBoxes > div > div:nth-child(2){
     height: 9.6rem;
-}
 
+}
+/* erase display and flex and expected to be side by side, then thought it was parennt or grandparent inheritence but no */
 .planBoxes > div > div:nth-child(2) > ul {
     display: flex;
     flex-direction: column;
@@ -124,6 +120,7 @@
 
 .buttonBlack{
     display: block;
+    width: 9.5rem;
     text-align: center;
     padding: .75rem 0;
     color: white;
@@ -131,13 +128,13 @@
     background-color: black;
     border-radius: .5rem;
     font-size: .7rem;
-    width: 150px;
 }
 
 
 /* Media Queries  */
 
-@media screen and (max-width: 480px){
+
+@media screen and (max-width: 640px){
     .container{
         height: fit-content;
         padding-top: 88px;
@@ -150,5 +147,61 @@
         height: fit-content;
     }
 
+    .title{
+        font-size: 3.5rem;
+    }
+
+    .price{
+        font-size: 2.5rem;
+    }
+
 
 }
+
+@media screen and (max-width: 480px){
+    .container{
+        height: fit-content;
+        padding-top: 88px;
+        /* padding-bottom: 2rem; */
+        background-color: black;
+    }
+    
+    .planBoxes{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .title{
+        font-size: 2.5rem;
+    }
+
+    .price{
+        font-size: 2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 360px){
+    
+    .underTitleContainer{
+        background-color:black;
+        padding-right: 1.5rem;
+    }
+
+    .planBoxes{
+        height: 89rem;
+    }
+
+    .saveImg{
+        width: 90px;
+    }
+/*     
+    .saveImgBelow{
+       display: inline;
+    } */
+ 
+}
+
