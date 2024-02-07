@@ -196,7 +196,8 @@
     }
 
     .saveImg{
-        width: 90px;
+        width: 70px;
+        padding-right: 1rem;
     }
 /*     
     .saveImgBelow{
