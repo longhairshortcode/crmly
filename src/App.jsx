@@ -3,6 +3,7 @@
 import { Routes, Route } from "react-router-dom"
 import Navbar from "./layout/Navbar"
 import Prices from "./pages/Prices"
+import Signup from "./pages/Signup"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path={"/prices"} element={<Prices/>}></Route>
+        <Route path={"/signup"} element={<Signup/>}></Route>
       </Routes>
 
     </>

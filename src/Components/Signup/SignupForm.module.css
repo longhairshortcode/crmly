@@ -1,0 +1,49 @@
+.container{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+  /* height: 369px; */
+  height: calc(100vh - 398.19px);
+  width: 100%;
+  margin: 0 auto;
+  /* gap: 5rem; */
+
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+    border-radius: .22rem;
+}
+
+
+.formsBoth{
+    height: 60%;
+    margin-top: 1.5rem;
+    width: 42%;
+    background-color:dimgray;
+    border: 2px black solid;
+    
+}
+
+
+/* .form1 > input{
+    display: flex;
+} */
+
+.firstName, .lastName{
+   flex-grow: 1;
+}
+
+.practiceName, .emailAddress, .phone, .website {
+    width: 99%;
+}
+
+
+

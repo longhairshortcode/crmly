@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    gap: 3rem;
+    color: white;
+    background-color: black;
+}
+
+.title{
+    padding-top: 5rem;
+    font-size: 2rem;
+}
+
+.paragraph{
+    width: 31rem;
+    text-align: center;
+    line-height: 1.7rem;
+}
