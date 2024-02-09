@@ -84,7 +84,7 @@
 input::placeholder, textarea::placeholder{
     color: #333;
     display: flex;
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .submitBut{
@@ -97,7 +97,14 @@ input::placeholder, textarea::placeholder{
 
 
 
+/* can i make * bigger like this ? */
 
+/* input::placeholder::after {
+  content: '*';
+  font-size: 1.5em; Adjust the font size as needed */
+  /* color: red; Adjust the color as needed */
+  /* vertical-align: middle; Align the asterisk vertically */
+/* } */
 
 
 
