@@ -24,13 +24,13 @@
 }
 
 .getStartedButton{
-    border-radius: var(--border-radius);
-    background-color: var(--button-background-white);
-    border: var(--button-border-white);
+    border-radius: .5rem;
+    background-color: #ffffff;
+    border: .1rem solid white; 
     color: black;
     font-size: .9rem;
-    padding: var(--padding-one);
-    width: var(--button-width);
+    width: 9.5rem;
+    padding: .75rem 0rem;
     text-align: center;
     font-weight: 400;
 }

@@ -21,12 +21,13 @@ function Prices() {
 
       <div className={style.planBoxes}>
 
-        <div className={style.leftPink}>
+        <div className={style.leftPink}>            
             <div className={style.first}>
               <p className={style.tier}>Simple</p>
               <p className={style.price}>Free</p>
               <p className={style.audience}>Free plan for all users.</p>
             </div>
+
             <div className={style.second}>
               <ul>
                 <li><IoIosCheckmarkCircle className={style.bullet} /> Store up to 20 businesses</li>
@@ -36,17 +37,20 @@ function Prices() {
                 <li className={style.lastLi}><IoIosCheckmarkCircle className={style.bullet} / > Mac, PC, Android, iOS, and Browser</li>
               </ul>
             </div>
+
             <div className={style.third}>
               <Link to="" className={style.buttonBlack}>Get Free Plan</Link>
             </div>
         </div>
 
-       <div className={style.middleBlue}>
+
+        <div className={style.middleBlue}>
           <div className={style.first}>
             <p className={style.tier}>Efficient</p>
             <p className={style.price}>$15<span className={style.perMonth}>/month</span></p>
             <p className={style.audience}>Ideal for individual creators.</p>
           </div>
+
           <div className={style.second}>
             <ul>
               <li><IoIosCheckmarkCircle className={style.bullet} /> Everything in Simple</li>
@@ -56,31 +60,36 @@ function Prices() {
               <li className={style.lastLi}><IoIosCheckmarkCircle className={style.bullet} / > Links with password protection.</li>       
             </ul>
           </div>
+          
           <div className={style.third}>
             <Link to="" className={style.buttonBlack}>Get Efficient Plan </Link> 
           </div>
        </div>
-           
+
+
        <div className={style.rightYellow}>
-        <div className={style.first}>
-          <p className={style.tier}>Team</p>
-          <p className={style.price}>$25<span className={style.perMonth}>/month</span></p>
-          <p className={style.audience}>Small teams with up to 10 users.</p>
-        </div>
-        <div className={style.second}>
-          <ul>
-            <li><IoIosCheckmarkCircle className={style.bullet} /> Everything in Efficient</li>
-            <li><IoIosCheckmarkCircle className={style.bullet} /> Unlimited team members</li>
-            <li><IoIosCheckmarkCircle className={style.bullet} /> Custom storage plans</li>
-            <li className={style.lastLi}><IoIosCheckmarkCircle className={style.bullet} / > White lable branding</li>        
-          </ul>
-        </div>
+          <div className={style.first}>
+            <p className={style.tier}>Team</p>
+            <p className={style.price}>$25<span className={style.perMonth}>/month</span></p>
+            <p className={style.audience}>Small teams with up to 10 users.</p>
+          </div>
+          
+          <div className={style.second}>
+            <ul>
+              <li><IoIosCheckmarkCircle className={style.bullet} /> Everything in Efficient</li>
+              <li><IoIosCheckmarkCircle className={style.bullet} /> Unlimited team members</li>
+              <li><IoIosCheckmarkCircle className={style.bullet} /> Custom storage plans</li>
+              <li className={style.lastLi}><IoIosCheckmarkCircle className={style.bullet} / > White lable branding</li>        
+            </ul>
+          </div>
         
-        <div className={style.third}>
-          <Link to="" className={style.buttonBlack}>Get Team Plan</Link>
-        </div>
-       </div> 
+          <div className={style.third}>
+            <Link to="" className={style.buttonBlack}>Get Team Plan</Link>
+          </div>
+        </div> 
+      
       </div>
+    
     </div>
   )
 }
