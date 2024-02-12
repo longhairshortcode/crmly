@@ -48,7 +48,9 @@ function SignupForm2() {
             <textarea className={style.comment} name="comment" value={comment} onChange={(e)=>setComment(e.target.value)} required placeholder="Got a question? Feel free to type it here!"></textarea>
         </div>
         </div>  
+        <div>
         <button type="submit" className={style.submitBut}>Submit Form</button>                     
+        </div>
       </form>
     </div>
   ) 

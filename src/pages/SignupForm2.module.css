@@ -92,10 +92,12 @@ input::placeholder, textarea::placeholder{
 } 
 
 .submitBut{
+    display: flex;
     width: fit-content;
     margin: 0 auto;
     border-radius: .4rem;
     padding: .4rem .8rem;
-    border: 5px orange solid;
+    
+    /* border: 5px orange solid; */
 }
 
