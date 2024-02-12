@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #000;
+    /* border: green solid 2px; */
+    height: 684px;
+    width: 100%;
+    
+}
+
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-width: 750px;
+    margin-bottom: 55px;
+    gap: 2rem;
+    /* margin-top: 17.5rem; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    background-color: #333;
+    /* border: yellow 2px solid; */
+    
+}
+
+.formH2{
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    /* border: white 2px solid; */
+}
+
+ .containerOfBothForms{
+    display: flex;
+    /* margin-top: 1rem; */
+    padding: 0 2rem;
+    gap: 1.5rem;
+    /* border: 3px blue solid; */
+    
+} 
+
+.formLeft{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    width: 50%;
+    height: fit-content;
+    gap: 1rem;
+    /* border: pink 2px solid; */
+
+}
+
+.firstLastContainer{
+    display: flex;
+    gap: .7rem;
+}
+
+.formRight{    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    width: 50%;
+    gap: 1rem;
+    /* border: 2px red solid; */
+    height: fit-content
+    
+}
+
+.firstName, .lastName, .practiceName, .emailAddress, .tel, .url, .selectPlan, .homeAddr, .comment{
+    width: 100%;
+    height: 1.9rem;
+    border-radius: .3rem;
+    background-color: #666;
+    padding-left: 8px;
+
+}
+
+.selectPlan{
+    color: #333;
+    font-size: 12px;
+}
+
+
+.comment{
+    height: 7.8rem;
+    padding: 8px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #333;
+} 
+
+.submitBut{
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: .4rem;
+    padding: .4rem .8rem;
+    border: 5px orange solid;
+}
+

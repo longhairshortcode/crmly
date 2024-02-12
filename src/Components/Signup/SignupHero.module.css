@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40vh;
+    height: 45vh;
     gap: 3rem;
     color: white;
-    background-color: black;
+    background-color: #000;
 }
 
 .title{
