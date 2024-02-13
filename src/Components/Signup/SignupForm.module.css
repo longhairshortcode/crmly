@@ -96,6 +96,10 @@ input::placeholder, textarea::placeholder{
     /* border: orange 2px solid; */
 }
 
+.submitBut:active{
+  scale: .97;
+  background-color: lightgray;
+}
 
 /* easier way to make all alignt correctly? did i do form1 and for2 2 correctly? */
 

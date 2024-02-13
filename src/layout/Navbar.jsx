@@ -28,7 +28,7 @@ const closeLinkMenu = () => {
       <div className={`${style['rightLinks']} ${showLinks ? style['showLinks'] : ""}`}>
             <NavLink to="/signup2" onClick={closeLinkMenu}>Features</NavLink>
             <NavLink to="/prices" onClick={closeLinkMenu}>Prices</NavLink>
-            <NavLink to="/integration" onClick={closeLinkMenu}>Integration</NavLink>
+            <NavLink to="/sf3" onClick={closeLinkMenu}>Integration</NavLink>
             <NavLink to="/login" onClick={closeLinkMenu}>Log In</NavLink>
             <NavLink to="/signup" className={style.getStartedButton} onClick={closeLinkMenu}>Get Started</NavLink>
       </div>

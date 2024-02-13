@@ -2,31 +2,35 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-color: #000;
+    padding-bottom: 40px;
+    /* background-color: #000; */
+    background-color: red;
     /* border: green solid 2px; */
-    height: 684px;
+    min-height: calc(100vh - 89px);
     width: 100%;
     
 }
 
-
 .containerForm{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    align-items: center;
+    min-height: 400px;
+    padding-bottom: 20px;
     max-width: 750px;
-    margin-bottom: 55px;
     gap: 2rem;
     /* margin-top: 17.5rem; */
     /* margin-left: auto; */
     /* margin-right: auto; */
     background-color: #333;
-    /* border: yellow 2px solid; */
+    border: yellow 2px solid;
     
 }
 
 .formH2{
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.3rem;
     /* border: white 2px solid; */
 }
@@ -92,12 +96,14 @@ input::placeholder, textarea::placeholder{
 } 
 
 .submitBut{
-    display: flex;
-    width: fit-content;
-    margin: 0 auto;
+    /* width: fit-content; */
+    /* margin: 0 auto; */
     border-radius: .4rem;
     padding: .4rem .8rem;
-    
+    cursor: pointer;
     /* border: 5px orange solid; */
 }
 
+.submitBut:active{
+    scale: .97;
+}
