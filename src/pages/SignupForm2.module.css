@@ -6,6 +6,7 @@
     /* background-color: #000; */
     background-color: red;
     /* border: green solid 2px; */
+    /* //is min height correct? */
     min-height: calc(100vh - 89px);
     width: 100%;
     
