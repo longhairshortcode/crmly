@@ -30,6 +30,7 @@ const closeLinkMenu = () => {
             <NavLink to="/prices" onClick={closeLinkMenu}>Prices</NavLink>
             <NavLink to="/sf3" onClick={closeLinkMenu}>Integration</NavLink>
             <NavLink to="/yourresults" onClick={closeLinkMenu}>Your Results</NavLink>
+            <NavLink to="/yourresults2" onClick={closeLinkMenu}>Your Results 2</NavLink>
             <NavLink to="/signup" className={style.getStartedButton} onClick={closeLinkMenu}>Get Started</NavLink>
       </div>
 
