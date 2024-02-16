@@ -8,6 +8,7 @@ import SignupForm2 from "./pages/SignupForm2"
 import SF3 from "./pages/SF3"
 import YourResults from "./pages/YourResults"
 import YourResults2 from "./pages/YourResults2"
+import Grid from "./pages/Grid"
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path={"/sf3"} element={<SF3/>}></Route>
         <Route path={"/yourresults"} element={<YourResults/>}></Route>
         <Route  path={"/yourresults2"} element={<YourResults2/>}></Route> 
+        <Route path={"/grid"} element={<Grid/>}></Route>
       </Routes>
 
     </>

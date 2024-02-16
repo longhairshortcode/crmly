@@ -17,4 +17,9 @@
 body, *, html{
 
 }
+/* this pushes all the content, except the nav that
+has position fixed, to start 89px below top */
+body{
+  padding-top: 89px;
+}
 

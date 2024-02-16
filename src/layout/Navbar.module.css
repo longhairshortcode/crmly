@@ -1,4 +1,8 @@
 .container{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 89px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,9 +12,6 @@
     /* padding: .5rem 3rem .5rem .5rem; */
 }
 
-.containerLogo, .rightLinks{
-    padding-top: 2rem;
-}
 
 .containerLogo{
     padding-left: 13rem;
@@ -70,8 +71,8 @@
         align-items: center;
         width: 100%;
         gap: 4rem;
-        top: 88px;
-        height: calc(100vh - 88px);
+        top: 89px;
+        height: calc(100vh - 89px);
         padding-top: 2rem;
         /* padding-right: 0; */
         background-color: black;
@@ -83,8 +84,8 @@
     
     .container{
         position: fixed;
+        top: 0;
         width: 100%;
-        height: 88px;
     }
 
     .containerLogo{
@@ -107,12 +108,12 @@
         align-items: center;
         width: 100%;
         gap: 3em;
-        top: 88px;
+        top: 89px;
         right: 0;
-        height: calc(100vh - 88px);
+        height: calc(100vh - 89px);
         padding-top: 3rem;
         padding-right: 0;
-        background-color: black;
+        background-color: yellow;
     }
 
     .showLinks{
@@ -121,8 +122,8 @@
 
     .container{
         position: fixed;
+        top: 0;
         width: 100%;
-        height: 88px;
        
     }
 
@@ -147,9 +148,9 @@
         align-items: center;
         width: 100%;
         gap: 3rem;
-        top: 88px;
+        top: 89px;
         right: 0;
-        height: calc(100vh - 88px);
+        height: calc(100vh - 89px);
         padding-top: 3rem;
         padding-right: 0;
         background-color: black;

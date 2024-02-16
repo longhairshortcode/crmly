@@ -22,9 +22,7 @@ function SignupForm2() {
   return (
     <div className={style.container}>
       <form className={style.containerForm} onSubmit={handleSubmit}>
-        
         <h2 className={style.formH2}>Tell us about you</h2> 
-        
         <div className={style.containerOfBothForms}>
         <div className={style.formLeft}>
           <div className={style.firstLastContainer}>
@@ -38,7 +36,7 @@ function SignupForm2() {
         </div>
            
         <div className={style.formRight}> 
-            <select className={style.selectPlan} value={selectPlan} onChange={(e)=>(setSelectPlan(e.target.value))}>
+            <select className={style.selectPlan} value={selectPlan} onChange={(e)=>(setSelectPlan(e.target.value))} required>
                 <option className={style.selectPlanShown}>Select Plan&lowast;</option>
                 <option>Plan 1</option>
                 <option>Plan 2</option>
@@ -52,6 +50,11 @@ function SignupForm2() {
         <button type="submit" className={style.submitBut}>Submit Form</button>                     
         </div>
       </form>
+
+
+
+    
+     
     </div>
   ) 
 }

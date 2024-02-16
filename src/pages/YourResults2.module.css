@@ -1,6 +1,6 @@
+
 .componentContainer{
     background-color: white;
-    /* is 89 the rigid nav h so always will be 100%-89 to respons? */
     min-height: calc(100vh - 89px);
     display: flex;
     justify-content: center;
@@ -113,9 +113,8 @@
     height: 40px;
     border-radius: 5px;
     padding: 15px;
-    /* can we do without below? */
-    /* width: 100%; */
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-size: 13px;
 }
@@ -169,9 +168,38 @@
 }
 
 
-
+/* finish this */
 @media screen and (max-width: 480px) {
     
 
-    
+.parentContainer{
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.blueLeftChild, .whiteRightChild{
+    width: 100%;
+    min-height: 425px;
+}
+
+.blueLeftChild{
+    border-radius: 0 0 20px 20px;
+    padding: 25px;
+}
+
+.messageBelowNum{
+    max-width: 230px;
+}
+
+.whiteRightChild{
+    background-color: white;
+    gap: 25px;
+    padding: 25px;
+}
+
+.fourSumContainer > div{
+    height: 50px;
+}
+
 }
