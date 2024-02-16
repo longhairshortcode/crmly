@@ -113,10 +113,13 @@ input::placeholder, textarea::placeholder{
 
     .containerForm {
         width: 100%;
-        padding-top:30px;
     }
 
     .container{
         padding: 0px;
+    }
+
+    .submitBut{
+        color: grey;
     }
 }
