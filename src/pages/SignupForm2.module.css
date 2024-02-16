@@ -119,7 +119,5 @@ input::placeholder, textarea::placeholder{
         padding: 0px;
     }
 
-    .submitBut{
-        color: grey;
-    }
+
 }
