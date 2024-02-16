@@ -91,6 +91,7 @@ input::placeholder, textarea::placeholder{
     padding: 7px;
     /* margin-bottom: 25px; */
     cursor: pointer;
+    color: silver;
 }
 
 .submitBut:active{
@@ -113,6 +114,7 @@ input::placeholder, textarea::placeholder{
 
     .containerForm {
         width: 100%;
+        min-height: calc(100vh - 89px);
     }
 
     .container{
