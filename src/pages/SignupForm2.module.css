@@ -37,8 +37,6 @@
 .formLeft{
     display: flex;
     flex-direction: column;
-    /* why before did below if above works? Same thing? */
-    /* flex-wrap: wrap; */
     background-color: #333;
     width: 50%;
     height: fit-content;
@@ -48,13 +46,12 @@
 .firstLastContainer{
     display: flex;
     gap: .7rem;
+    
 }
 
 .formRight{    
     display: flex;
     flex-direction: column;
-    /* why before again did flex-wrap and not col?, same thing? */
-    /* flex-wrap: wrap; */
     background-color: #333;
     width: 50%;
     gap: 1rem;
@@ -110,6 +107,18 @@ input::placeholder, textarea::placeholder{
 
     .formLeft, .formRight{
         width: 100%;
+    }
+
+    .containerOfBothForms{
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .firstLastContainer{
+        display: flex;
+        flex-direction: column;
+        gap: .7rem;
+        background-color: #333;
     }
 
 

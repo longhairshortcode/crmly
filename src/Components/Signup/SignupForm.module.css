@@ -1,15 +1,16 @@
 .container{
+    display: flex;
     background-color: #000;
     height: 435px;
     width: 100%;
     /* border: 2px green solid; */
   }
   
-  .formContainer{
+  .formContainer1{
       display: flex;
       flex-direction: column;
       height: 400px;
-      max-width: 750px;
+      max-width: 600px;
       gap: 2rem;
       justify-content: center;
       margin: auto;
@@ -18,6 +19,34 @@
       border-radius: .22rem;
       /* border: 2px yellow solid; */
   }
+
+  .formContainer2{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    max-width: 600px;
+    gap: 2rem;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    background-color: red;
+    border-radius: .22rem;
+    /* border: 2px yellow solid; */
+}
+
+.formContainer3{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  max-width: 600px;
+  gap: 2rem;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  background-color: blue;
+  border-radius: .22rem;
+  /* border: 2px yellow solid; */
+}
   
   .formH2{
     background-color: #333;
