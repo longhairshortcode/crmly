@@ -20,7 +20,7 @@ function SignupForm() {
     url: "",
     selectPlan: "",
     homeAddr: "",
-    comment: "",
+    comments: "",
   })
           //CREATE handleChange handler function that extracts name/value from event, and then updates states 
           //with them vis setUserData setter 
@@ -46,7 +46,7 @@ function SignupForm() {
 //   setUserData(prev=>({...prev, [name]:value}))
 // }
 
-// Q - need this for all 3 levels? I think so since need on all forms?
+// 
   function handleSubmit(e){
     e.preventDefault() 
   }
@@ -64,7 +64,7 @@ function SignupForm() {
   const [comments, setComments] = useState("")
   
 
-  //Q do i need this at all, and when would I need it?
+  //
   //  useEffect(()=>{
   //  console.log(emailAddress)
   //  console.log(firstName)
@@ -91,8 +91,7 @@ function SignupForm() {
           </div>
         
           <div className={`${style['form2']} ${style['formsBoth']}`}>
-            {/* is it okay this one doesn't have a name? */}
-            <select value={plan} onChange={(e) => setPlan(e.target.value)} className={style.selectPlan}>
+            <select name="plan" value={plan} onChange={(e) => setPlan(e.target.value)} className={style.selectPlan}>
               <option className={style.selectPlanShow}>Select Plan&lowast;</option>
               <option>Plan 1</option>
               <option>Plan 2</option>
@@ -165,8 +164,7 @@ function SignupForm() {
         
           <div className={`${style['form2']} ${style['formsBoth']}`}>
             <select 
-            // Q/Clarification: this one didn't have a name, accidentally forgot or doesn't have name? Will add one for now, esp
-            //since i havea plan state variable at the top
+            //
               name="plan"
               value={plan} 
               onChange={(e)=>setUserData(prev=>({...prev, plan:e.target.value}))}
@@ -205,7 +203,7 @@ function SignupForm() {
             <input 
               type="text" 
               name="firstName" 
-              value={firstName} 
+              value={userData.firstName} 
               onChange={handleChange} 
               required 
               className={style.firstName} 
@@ -213,7 +211,7 @@ function SignupForm() {
             <input 
               type="text" 
               name="lastName" 
-              value={lastName} 
+              value={userData.lastName} 
               onChange={handleChange}  
               required 
               className={style.lastName} 
@@ -222,7 +220,7 @@ function SignupForm() {
             <input 
               type="text" 
               name="practiceName" 
-              value={practiceName} 
+              value={userData.practiceName} 
               onChange={handleChange}
               required 
               className={style.practiceName} 
@@ -230,7 +228,7 @@ function SignupForm() {
             <input 
               type="email" 
               name="emailAddress" 
-              value={emailAddress} 
+              value={userData.emailAddress} 
               onChange={handleChange} 
               required 
               className={style.emailAddress} 
@@ -238,7 +236,7 @@ function SignupForm() {
             <input 
               type="tel" 
               name="tel" 
-              value={tel} 
+              value={userData.tel} 
               onChange={handleChange} 
               required 
               className={style.phone}
@@ -246,7 +244,7 @@ function SignupForm() {
               <input 
               type="url" 
               name="url" 
-              value={url} 
+              value={userData.url} 
               onChange={handleChange} 
               required 
               className={style.website}placeholder='Website'/>
@@ -255,7 +253,7 @@ function SignupForm() {
           <div className={`${style['form2']} ${style['formsBoth']}`}>
             <select 
               name="plan"
-              value={plan} 
+              value={userData.plan} 
               onChange={handleChange}
               className={style.selectPlan}>
                 <option className={style.selectPlanShow}>Select Plan&lowast;</option>
@@ -266,14 +264,14 @@ function SignupForm() {
             <input 
               type="text" 
               name="homeAddr" 
-              value={homeAddr} 
+              value={userData.homeAddr} 
               onChange={handleChange}
               required 
               className={style.addr}
               placeholder="Enter your address&lowast;"/>
             <textarea 
               name="comments" 
-              value={comments} 
+              value={userData.comments} 
               onChange={handleChange} 
               required 
               className={style.commentsSection} 

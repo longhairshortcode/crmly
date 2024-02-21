@@ -6,6 +6,7 @@ import Prices from "./pages/Prices"
 import Signup from "./pages/Signup"
 import SignupForm2 from "./pages/SignupForm2"
 import SF3 from "./pages/SF3"
+import SignUpForm3 from "./Components/Signup/SignUpForm3"
 import YourResults from "./pages/YourResults"
 import YourResults2 from "./pages/YourResults2"
 import Grid from "./pages/Grid"
@@ -25,6 +26,7 @@ function App() {
         <Route path={"/yourresults"} element={<YourResults/>}></Route>
         <Route  path={"/yourresults2"} element={<YourResults2/>}></Route> 
         <Route path={"/grid"} element={<Grid/>}></Route>
+        <Route path={"/signupform3"} element={<SignUpForm3/>}></Route>
       </Routes>
 
     </>

@@ -1,0 +1,23 @@
+.componentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: calc(100vh - 89px);
+
+}
+
+.form1{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    border: 2px red solid;
+    gap: .5rem;
+    width: 100%;
+    max-width: 500px;
+    height: fit-content
+}
+
+.firstName, .middleName, .lastName{
+    background-color: white;
+}
