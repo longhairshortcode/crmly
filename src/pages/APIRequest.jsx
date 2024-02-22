@@ -1,4 +1,4 @@
-// making an API request on click of an ordinary button
+// making an API request on click of an ordinary button (not a form button)
 import axios from "axios"
 
 function APIRequest(){
