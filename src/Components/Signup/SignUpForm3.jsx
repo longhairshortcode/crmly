@@ -18,8 +18,16 @@ function SignUpForm3() {
 
   const handleSubmit = async (e) =>{
     e.preventDefault()
+    const firstName = userData.firstName
+    const middleName = userData.middleName
+    const lastName = userData.lastName 
+
     try{
-      await axios.post("api endpoint", {data})
+      const response = await axios.post("https://backendAPI", {firstName, middleName, lastName})
+      console.log(response)
+      if (response.status == 200){
+        //update the user state
+      }
     }catch(error){
       console.log(error)
     }

@@ -10,6 +10,7 @@ import SignUpForm3 from "./Components/Signup/SignUpForm3"
 import YourResults from "./pages/YourResults"
 import YourResults2 from "./pages/YourResults2"
 import Grid from "./pages/Grid"
+import APIRequest from "./pages/APIRequest"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route  path={"/yourresults2"} element={<YourResults2/>}></Route> 
         <Route path={"/grid"} element={<Grid/>}></Route>
         <Route path={"/signupform3"} element={<SignUpForm3/>}></Route>
+        <Route path={"/apireq"} element={<APIRequest/>}></Route>       
       </Routes>
 
     </>
